@@ -2,7 +2,7 @@
 .sidebar .wp-block .wp-block-body .col-md-8 p,.col-sm-10 .meta-info span a .text-chrome, .col-sm-10 .meta-info span a .text-red-mid,
 .sidebar .wp-block .wp-block-body .col-md-12 p:first-child {
   visibility: hidden;
-}
+} 
 .col-sm-10 .meta-info span a:before {
   content: " Святая принцесса";
   visibility: visible !important;  
