@@ -1,0 +1,82 @@
+
+.body-bg-8 {
+    background: url(http://rp.gs-studio.xyz/img/alchemist/bg_center.png);
+    background-size: 256px;
+    background-repeat: repeat;
+    background-position: center top;
+}
+.sidebar .wp-block, .row .col-md-12 > .wp-block, .bg-white, .redactor-editor, .redactor-box {
+    background: url(http://rp.gs-studio.xyz/img/alchemist/bg_text.png) !important;
+    box-shadow: inset 1px 1px 5px 2px rgba(0,0,0,.5) !important;
+    border: 1px solid #2a1d13 !important;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 3px rgba(0,0,0,.8);
+}
+.img-center:hover {
+    filter: hue-rotate(0) drop-shadow(16px 16px 20px darkred);
+    opacity: 1;
+}
+.img-center {
+    filter: hue-rotate(200deg) drop-shadow(16px 16px 20px lightblue);
+    width: 300px !important;
+    content: url(http://rp.gs-studio.xyz/img/alchemist/logo1.png);
+}
+.img-center, .bg-dark {
+    opacity: 0.8;
+}
+.figure .wp-block {
+    background: none;
+    box-shadow: none !important;
+}
+.col-md-12 .article-title, .info-list, .comment-list .comment-count, .section-title a, .footer .copyright {
+    background: none !important;
+    letter-spacing: 1px !important;;
+    text-shadow: 0 3px 3px rgba(0,0,0,.8) !important;
+}
+.sidebar {
+    padding: 15px;
+}
+.wrapper-main .bg-dark {
+    display: none;
+}
+.bg-base-img, .sidebar, .footer {
+    background: url(http://rp.gs-studio.xyz/img/alchemist/bg_text1.png) !important;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.7);
+	1px 1px 5px 2px rgba(0,0,0,.7) !important
+}
+.figure .calendar {
+    display: none;
+}
+.fc-unthemed .fc-today {
+    background: rgba(255,255,255,0.3);
+    background-size: cover;
+    filter: contrast(5);
+}
+.fc-unthemed .fc-today:hover {
+    filter: contrast(15);
+}
+.fc-unthemed .fc-divider, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: black;
+    color: white;
+}
+.wp-block-body .col-md-8 {
+    width: 100% !important;
+}
+.panel-default {
+    background: rgba(0,0,0,0.5);
+}
+.sidebar a, .wp-block.default, .article-subtitle, .article-title, .section-title a, .wp-block.article.post .meta-info span strong, .text-chrome, .meta-info a, .comment-author .comment-meta, .comment-footer .comment-meta .link-reply, .redactor-editor, a:hover, .content .info-list .item {
+    color: #fff !important;
+}
+.text-red-mid {
+    color: #D761FF;
+}
+.make_minus .fa, .make_plus .fa, .like-num {
+    color: #D761FF !important;
+}
+.badge {
+    background: rgba(0,0,0,0.4);
+}
+footer .copyright {
+    color: white;
+}
