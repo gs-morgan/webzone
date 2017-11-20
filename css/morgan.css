@@ -1,0 +1,59 @@
+.sidebar .wp-block .wp-block-body .col-md-8 h2 a,
+.sidebar .wp-block .wp-block-body .col-md-8 p,.col-sm-10 .meta-info span a .text-chrome, .col-sm-10 .meta-info span a .text-red-mid,
+.sidebar .wp-block .wp-block-body .col-md-12 p:first-child {
+  visibility: hidden;
+}
+.col-sm-10 .meta-info span a:before {
+  content: " Святая принцесса";
+  visibility: visible !important;  
+}
+.col-sm-10 .meta-info span a .text-chrome:before {
+    content: "Моргания <3";
+    visibility: visible !important;
+    color: #D761FF;
+}
+@media (min-width:1200px) {
+  .sidebar .default .wp-block-body .col-md-4 {
+    width: 200px!important;
+    height: 156px!important;
+  }.sidebar .wp-block .wp-block-body .col-md-12 p:first-child {
+    margin-bottom: -18px;
+  }
+}
+
+.sidebar .default .wp-block-body .col-md-4 {
+  background: url(https://forum.aldoran.ru/uploads/profile/photo-13012.gif);
+  background-size: cover;
+  width: 165px;
+  height: 129px;
+  margin-bottom: 15px!important;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .7);
+  cursor: url(http://gs-studio.xyz/cursor.cur), default;
+}
+.avatar-sm {
+    display: none;
+}
+.sidebar .wp-block .wp-block-body .col-md-8 h2 a:before {
+  content: "Святая принцесса Моргания <3";
+  visibility: visible !important;
+}
+.sidebar .wp-block .wp-block-body .col-md-12 p:first-child i {
+  visibility: visible !important;
+}
+
+.sidebar .wp-block .wp-block-body .col-md-8 p:before {
+  content: "Kawai number one in the world";
+  visibility: visible !important;
+}
+
+.sidebar .wp-block .wp-block-body .col-md-12 p:first-child i {
+  visibility: visible !important;
+}
+
+i.fa.fa-quote-left:after {
+  letter-spacing: 1px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, .8);
+  font-family: "Raleway", sans-serif !important;
+  font-size: 13px;
+  content: " В жизни главное три вещи. Пожрать, поспать и еще раз пожрать.";
+}
