@@ -57,3 +57,6 @@ i.fa.fa-quote-left:after {
   font-size: 13px;
   content: " В жизни главное три вещи. Пожрать, поспать и еще раз пожрать.";
 }
+.col-md-12 .testimonial .wp-block-body .fa:before, .col-md-12 .testimonial .wp-block-body .fa:after {
+    display: none;
+}
