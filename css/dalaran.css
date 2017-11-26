@@ -153,3 +153,34 @@ a {
 footer .copyright {
     color: white;
 }
+
+.article-image .avatar-lg {
+    -webkit-transition: .3s ease-in-out !important;
+    transition: .3s ease-in-out !important;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.7);
+    filter: drop-shadow(12px 12px 20px black) contrast(110%);
+}
+
+.article-image .avatar-lg:hover {
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.9);
+    filter: drop-shadow(16px 16px 20px black) contrast(130%);
+}
+.btn-green {
+    background: url(http://rp.gs-studio.xyz/img/dalaran/bg_text1.png) !important;
+    border: 1px solid rgba(0,0,0,0.6);
+}
+
+.btn-green:before {
+    background-color: rgba(0,0,0,0.6);
+}
+.btn-green:hover {
+    border-color: black;
+}
+.information-block .col-md-12 > center {
+    display: none;
+}
+.information-block .col-md-12 .testimonial {
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+}
