@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Andantino script';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Andantino script'), local('Andantinoscript-Regular'),
-        url(http://allfont.ru/cache/fonts/andantino-script_5cd3e3d54a5926ef75b2af691fee655e.woff) format('woff'),
-        url(http://allfont.ru/cache/fonts/andantino-script_5cd3e3d54a5926ef75b2af691fee655e.ttf) format('truetype');
+    font-family: 'Olietta script BoldItalic';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Olietta script BoldItalic'), local('Oliettascript-Bold Italic'),
+        url(http://allfont.ru/cache/fonts/olietta-script-bolditalic_3b96ae774d2110ff871ceb951d162315.woff) format('woff'),
+        url(http://allfont.ru/cache/fonts/olietta-script-bolditalic_3b96ae774d2110ff871ceb951d162315.ttf) format('truetype');
 }
 
 .wp-block.default { 
@@ -16,7 +16,7 @@ center {
     text-align: -webkit-center;
    color: white;
 font-size: 35px;
-font-family: 'Andantino script';
+font-family: 'Olietta script BoldItalic';
 text-shadow: 3px 3px 3px #aaa;
 }
 .info-list {
