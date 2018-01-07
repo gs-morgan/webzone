@@ -28,7 +28,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1OlGYVMkYzWWO7dQteqo0KIGNr
     var res_amount = entry['gsx$amount']['$t'];
     var res_about = entry['gsx$about']['$t'];
 	  if (!!res_id && !!res_name && !!res_amount && !!res_about) {
-			$(".submenu").append('<div id="char-' + res_id + '" class="static-block"><h1 class="name">' + res_name + ' [' + res_amount + ']</h1><div>' + res_about +'</div></div>');	
+			$(".submenu").append('<div id="char-' + res_id + '" class="static-block"><h1 class="name">' + res_name + ' [' + res_amount + ']</h1><div class="about">' + res_about +'</div></div>');	
 	}else{
 		
 		
