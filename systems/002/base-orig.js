@@ -28,7 +28,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1OlGYVMkYzWWO7dQteqo0KIGNr
     var res_amount = entry['gsx$amount']['$t'];
     var res_about = entry['gsx$about']['$t'];
 	  if (!!res_id && !!res_name && !!res_amount && !!res_about) {
-			$(".submenu").append('<div id="char-' + res_id + '" class="static-block"><h1 class="name">' + res_name + ' [' + res_amount + ']</h1><p>' + res_about +'</p></div>');	
+			$(".submenu").append('<div id="char-' + res_id + '" class="static-block"><h1 class="name">' + res_name + ' [' + res_amount + ']</h1><div>' + res_about +'</div></div>');	
 	}else{
 		
 		
@@ -59,10 +59,11 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1OlGYVMkYzWWO7dQteqo0KIGNr
 		var res_amount2 = entry['gsx$resamount']['$t'];
 		var res_need = entry['gsx$resneed']['$t'];	
 		var res_type = entry['gsx$restype']['$t'];	
-		var about2 = entry['gsx$about']['$t'];	
-		if (!!build_id && !!name && !!level && !!res_amount2 && !!res_need && res_type && about2 && (res_type == res_id)) {
+		var about2 = entry['gsx$about']['$t'];		
+		var bbonus = entry['gsx$bonus']['$t'];	
+		if (!!build_id && !!name && !!level && !!res_amount2 && !!res_need && res_type && about2 && bbonus && (res_type == res_id)) {
 			
-				$(".buildings").append('<div class="build"><h1 class="title">' + name + ' [lv' + level + ']</h1><p class="about">' + about2 + '</p><p class="roll-1">[Использовано: ' + res_amount2 + ' ' + res_name +']</p><p class="roll-2">[Нужно: ' + res_need + ']</p></div>');		
+				$(".buildings").append('<div class="build"><h1 class="title">' + name + ' [lv' + level + ']</h1><div class="about">' + about2 + '<hr>' + bbonus+ '</div><div class="roll-1">[Использовано: ' + res_amount2 + ' ' + res_name +']</div><div class="roll-2">[Нужно: ' + res_need + ']</div></div>');		
 		};		
 	  });  //конец блока
 	});
