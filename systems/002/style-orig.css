@@ -1,0 +1,148 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: url(bg.png);
+  height:100%;
+}
+
+.progress-bar {
+  background-color: #1a1a1a;
+  height: 25px;
+  padding: 1%;
+  width: 99%;
+  margin: 50px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  text-align: left;
+}
+
+.container {
+  width: 98%;
+  max-width: 1100px;
+  height: 100%;
+  padding: 0px;
+}
+.container-left, .roll-1 {float:left;}
+.container-right, .roll-2{float:right;}
+
+
+
+.roll-1, .roll-2 {width:45%; padding:1%;}
+
+.container-left, .container-right {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+}
+
+
+.title, .about{
+    width: 92%;
+    padding: 2%;
+    margin: 2%;
+    border: 1px black solid;
+}
+.title, .name {border:none;  text-align: center; font-size:25px; color:black !important;}
+.container-line {width:100%; height:25px; display:none; background-color:rgba(0,0,0,0.5);float:left;}
+
+@media (min-width:501px) and (max-width:1050px) {
+	.container-left, .container-right, .static-block, .atck, .dipl, .top-block, .build {max-width:100% !important;}
+	.container-left, .container-right {height: auto !important;}
+	.container-line {display:block !important;}
+	.container {width:75%; padding:0 12%;}
+	.submenu {display: none;}
+	body {width:auto !important; height:auto !important}
+	#cr {width:100% !important; max-width:100%;}
+	#cl1 {height:auto !important; width: 100% !important; overflow: hidden !important;}
+	#cl2 {height:auto !important; width: 100% !important; overflow: hidden !important;}
+}
+
+.container-line {width:100%; height:25px; display:none; background-color:rgba(0,0,0,0.5);float:left;}
+
+@media (min-width:1px) and  (max-width:500px) {
+	.container-left, .container-right, .static-block, .atck, .dipl, .top-block, .build {max-width:500px !important;}
+	.container-left, .container-right {height: auto !important;}
+	.container-line {display:block !important;}
+	.submenu {display: none;}
+	body {min-width:500px; height:auto !important}
+	#cr {width:100% !important; max-width:100%;}
+	#cl1 {height:auto !important; width: 100% !important; overflow: hidden !important;}
+	#cl2 {height:auto !important; width: 100% !important; overflow: hidden !important;}
+}
+
+	#cr {overflow: hidden;}
+	#cl1 {overflow-x: hidden;overflow-y: scroll;height: 100%;}
+	#cl2 {overflow-x: hidden; overflow-y: scroll;height: 100%;}
+
+.static-block, .atck, .dipl, .top-block, .build {
+    box-shadow: inset 1px 1px 5px 2px rgba(0, 0, 0, .5) !important;
+    border: 1px solid #2a1d13 !important;
+	width: 100%;
+    margin: 10px 0px;
+    float: left;
+    word-wrap: break-word;
+}
+
+.menu, .states {
+    box-shadow: inset 1px 1px 5px 2px rgba(0, 0, 0, .5) !important;
+    border: 1px solid #2a1d13 !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    float: left;
+    padding: 2%;
+    width: 96%;
+}
+
+.static-block:hover h1 {
+    color: rgba(230, 230, 230, 1) !important;
+}
+.static-block:hover {
+    background: rgba(33, 33, 33, 0.3) !important;
+}
+
+
+.menu .open, .mobile {
+    display: block !important;
+}
+
+.progress-value {
+  position: relative;
+  margin-top: -21px;
+  text-align: center;
+  color: white;
+}
+.dipl {
+    background: rgba(115, 152, 247,0.6) !important;
+}
+.atck {
+    background: rgba(226, 78, 89,0.6) !important;
+}
+.progress-bar span {
+  display: inline-block;
+  height: 25px;
+  width: 100%;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  -webkit-transition: width .4s ease-in-out;
+  -moz-transition: width .4s ease-in-out;
+  -ms-transition: width .4s ease-in-out;
+  -o-transition: width .4s ease-in-out;
+  transition: width .4s ease-in-out;
+}
+
+.loading span {
+  background: gray;
+  background: url(load.png);
+  max-width: 100%;
+  width: 0;
+  min-width: 0%;
+  padding: 0px;
+  background-size: contain;
+}
