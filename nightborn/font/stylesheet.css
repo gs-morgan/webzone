@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'AGBengaly';
+    src: url('hinted-AGBengaly.eot');
+    src: local('AGBengaly'),
+        url('hinted-AGBengaly.eot?#iefix') format('embedded-opentype'),
+        url('hinted-AGBengaly.woff2') format('woff2'),
+        url('hinted-AGBengaly.woff') format('woff'),
+        url('hinted-AGBengaly.ttf') format('truetype'),
+        url('hinted-AGBengaly.svg#AGBengaly') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
