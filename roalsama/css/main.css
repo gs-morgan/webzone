@@ -1,0 +1,230 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  background: #edeef0;
+  margin-bottom: 25px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+#new .datanew {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  width: 50%;
+  height: 600px;
+}
+
+#about .databout {
+  background-color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+  width: 50%;
+  height: 600px;
+  margin-left: 50%;
+  position:relative;
+}
+
+#new {
+  background: url(../img/main/bg2.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+#product {
+  background: url(../img/main/bg1.jpg) no-repeat fixed;
+  background-position: center;
+  text-align: center;
+  height: 300px;
+}
+
+#about {
+  background: url(../img/main/bg4.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 600px;
+}
+
+#product .clicker {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* sticky footer */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px rgba(0, 0, 0, 0.3) solid;
+  height: 25px;
+  line-height: 20px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#purchases {
+  background: url(../img/main/bg3.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: inherit;
+}
+#purchases .buy {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 300px;
+  color: #333;
+}
+
+#purchases .buy:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#new h1,
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#about h1,
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.btn-custom1 {
+    background-image: linear-gradient(to bottom, #f3f3f300 0, #f3efef00 100%);
+    border-color: #7770;
+    background-color: #337ab700;
+    color: #777;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
+}
+
+.btn-custom1:focus,
+.btn-custom1:hover {
+  background-color: #f2f8fd;
+  background-position: 0 -15px;
+  border-color: #777;
+  color: #636363;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 1px rgba(0, 0, 0, 0);
+}
+
+.btn-custom1.active,
+.open>.dropdown-toggle.btn-custom1 {
+  color: #636363;
+  background-color: #c5c5c5;
+  border-color: #777;
+}
+.btn-custom1{
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0), 0 1px 1px rgba(0, 0, 0, 0);
+}
+
+.centerdiv {
+  position:relative;
+  top:35%;
+}
+
+
+.main-block.home .row .col-sm-12 {
+    padding: 0;
+}
+
+.main-block .row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    padding: 15px;
+    height: 100px;
+    background: #352542;
+    color: #f8f8f8;
+}
+
+.footer .row {
+	margin-top:15px;
+	font-size:16px;
+}
+
+.nav-pills li {text-align:center;}
+.nav-pills>li>a {
+    border-radius: 0 !important;
+}
+.form-horizontal .form-group {margin-left:auto;margin-right:auto;}
+#profile-block .tab-content .prof-middle {max-width:1200px;margin-top:15px;}
+.navbar-nav {margin: auto;}
+
+.prof-middle, .market .book, .market .block-title, .busket {
+    background: white;
+    padding: 20px 10px;
+    border: 1px solid rgba(0,0,0,0.25);
+}
+
+.market .block-container {padding:0;margin-top:10px;}
+.market .book {margin-bottom:15px;}
+.market .book .title h4 {
+	margin-top:0;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+	padding-bottom:10px;}
+.panel{
+	margin-bottom:0;
+	margin-top:15px;
+	padding-top:15px;
+    border-top: 1px solid rgba(0,0,0,0.25);
+}
+
+.market .info ul{
+	list-style:none;
+	padding:0px;
+}
+.market .info ul ul{
+	padding-bottom:5px;
+	margin-bottom:5px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.market .title-block, .busket .title-block {
+	border-bottom:1px solid rgba(0,0,0,0.25);
+}
+
+.new-catalog .carousel-inner .item {
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.new-catalog .carousel-caption {
+	background:rgba(0,0,0,0.6);
+	border:1px solid rgba(0,0,0,0.7);
+}
+.new-catalog {padding:0;}
