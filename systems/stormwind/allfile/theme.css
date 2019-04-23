@@ -1,0 +1,126 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  background: url('../../img/bg0.png');
+  background-size:1200px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  background-color: #3a2936!important;
+  color: #fff!important;
+  text-align:center;
+}
+
+.navbar {
+	margin-bottom:0;
+}
+
+.container {
+	padding:0;
+}
+
+.centered {
+	margin:0 auto;
+}
+
+.preload_page {
+    position: fixed;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 10000;
+}
+.preload_page .center{
+    position: fixed;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+.preload_page .center img{
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+}
+
+@font-face {
+			font-family: 'Annabelle';
+			font-style: normal;
+			font-weight: 400;
+			src: local('Annabelle'), local('Annabelle-Regular'),
+				url(../fonts/annabelle.woff) format('woff'),
+				url(../fonts/annabelle.ttf) format('truetype');
+		}
+		body:hover > .bg {			
+		  -webkit-filter: blur(0px);
+			 -moz-filter: blur(0px);
+			   -o-filter: blur(0px);
+			  -ms-filter: blur(0px);
+				  filter: blur(0px);
+		}
+		.bg {
+			background: url('../img/bg.jpg') no-repeat;
+			background-position:center;
+			background-size:cover;
+			position:fixed;
+			width: 100%;
+			height: 100%;
+			z-index:-1000;
+			top:0;			
+			  -webkit-filter: blur(3px);
+				 -moz-filter: blur(3px);
+				   -o-filter: blur(3px);
+				  -ms-filter: blur(3px);
+					  filter: blur(3px);
+					  -webkit-transition-duration: 0.3s;
+						-o-transition-duration: 0.3s;
+						-moz-transition-duration: 0.3s;
+						transition-duration: 0.3s;
+		}
+		.row {
+			margin: 0 !important;
+		}
+
+		.row .col-sm-6 > .row {
+			margin: 5px 10px !important;
+		}
+
+		.row.list {
+			margin-top: 20px !important;
+		}
+
+		.row.list .col-sm-6 > .row {
+			background: rgba(255,255,255,0.4);
+			border:1px rgba(0,0,0,0.3) solid;
+			cursor: pointer;
+			padding:5px;
+			
+					  -webkit-transition-duration: 0.3s;
+						-o-transition-duration: 0.3s;
+						-moz-transition-duration: 0.3s;
+						transition-duration: 0.3s;
+		}
+
+		.row.list .col-sm-6 > .row:hover {
+			background: rgba(255,255,255,0.6);
+		}
+		.signature strong {
+			font-family: 'Annabelle', arial;
+		}
+		
+		.modal-body {
+			background: url('../img/content-bg.jpg');
+			border-radius: 0;
+			border: 1px black solid;
+		}
+		.btn-group-lg>.btn, .btn-lg {
+			border-radius:0;
+		}

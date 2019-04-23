@@ -1,0 +1,188 @@
+
+<html>
+<head>
+<title>Лицензии Штормграда</title>
+
+<link rel="stylesheet" type="text/css" href="./allfile/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="./allfile/theme.css?Tuesday 23rd of April 2019 11:48:44 AM">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Darkmoon Лицензии">
+<meta property="og:description" content="Кря">
+<script src="./allfile/jquery-3.3.1.min.js" type="0c29ffd990b74b1ad5ea9180-text/javascript"></script>
+<script src="./allfile/vue.js" type="0c29ffd990b74b1ad5ea9180-text/javascript"></script>
+<script src="./allfile/bootstrap.min.js" type="0c29ffd990b74b1ad5ea9180-text/javascript"></script>
+<script src="./allfile/html2canvas.min.js" type="0c29ffd990b74b1ad5ea9180-text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="https://rp-wow.ru">Darkmoon</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+Штормград
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="https://rp-wow.ru/articles/81-osobye-igrovye-pravila-centra-igry-korolevstvo-shtormgrad.html">Система</a>
+<a class="dropdown-item" href="https://rp-wow.ru/articles/91-zadanija-v-korolevstve-shtormgrad.html">Задания</a><a class="dropdown-item" href="#" http:="" allfont.ru="" cache="" fonts="">Экономика</a><a class="dropdown-item" href="https://rp-wow.ru/articles/82-ratusha.html">Ратуша</a><a class="dropdown-item" href="https://rp-wow.ru/articles/85-vsyo-o-nedvizhimosti.html">Недвижимость</a><a class="dropdown-item" href="https://rp-wow.ru/articles/80-zakony-korolevstva-shtormgrad.html">Законы</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link disabled" href="#">Наработки</a>
+</li>
+</ul>
+</div>
+</nav><div class="container" id="licenses">
+<div class='row list'>
+<div class='col-sm-6' v-for="entry in entries">
+<div class='row' data-toggle="modal" v-bind:data-target="'#license-'+entry.gsx$id.$t">
+<div class='col-1'>
+#{{entry.gsx$id.$t}}
+</div>
+<div class='col'>
+{{entry.gsx$name.$t}}
+</div>
+</div>
+<div class="modal fade bd-example-modal-lg" v-bind:id="'license-'+entry.gsx$id.$t" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content">
+<div class='modal-body' v-bind:id="'save'+entry.gsx$id.$t">
+<div class='row'>
+<div class='col'>
+Игровой ник: {{entry.gsx$nick.$t}}
+</div>
+<div class='col'>
+Гильдия: {{entry.gsx$guild.$t}}
+</div>
+</div>
+<hr>
+<div class='row'>
+<div class='col'>
+Я, <strong><u>{{entry.gsx$signatory.$t}}</u></strong> предоставляю для <strong><u>{{entry.gsx$name.$t}}</u></strong>:
+</div>
+<div class='col-12'>
+{{entry.gsx$about.$t}}
+</div>
+</div>
+<hr>
+<div class='row'>
+<div class='col'>
+Выдал: {{entry.gsx$signatory.$t}}
+</div>
+<div class='col signature'>
+Подпись: <strong><u>{{entry.gsx$signature.$t}}</u></strong>
+</div>
+</div>
+</div>
+<button type="button" class="btn btn-primary btn-lg btn-block" v-bind:value='entry.gsx$id.$t' onclick="if (!window.__cfRLUnblockHandlers) return false; save(this.value)" data-cf-modified-0c29ffd990b74b1ad5ea9180-="">Сохранить</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='version'>v.0.1.4</div>
+<footer class="footer">
+<h5>By <a href="https://rp-wow.ru/users/234">Mr. Morgan</a> &copy 2019</h5>
+</footer>
+
+
+<style>.version {
+    position: absolute;
+    bottom: 60px;
+    right: 5px;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Andantino script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Andantino script'), local('Andantinoscript-Regular'),
+        url(./fonts/andantino.woff) format('woff'),
+        url(./fonts/andantino.ttf) format('truetype');
+}
+
+body {font-family: 'Andantino script' !important;font-size: 35px;font-weight: 600;color: #500050;text-shadow: 0 0 3px lightgrey;}
+
+.lowwer {
+    font-size: 25px;
+}
+
+</style>
+<script type="0c29ffd990b74b1ad5ea9180-text/javascript">
+			var sheetUrl = 'https://spreadsheets.google.com/feeds/list/17IDy3x1rTkG7y4_lUuP8uo1oeavdugevGRiDigDo6YQ/1/public/values?alt=json'
+
+			var blog = new Vue({
+			  el: '#licenses',
+			  
+			  data: {
+					entries: null
+				},
+			  
+			  watch: {
+					currentPage: 'fetchData'
+				},
+
+			  created: function () {
+				this.fetchData()
+			  },
+			  
+			  methods: {
+				fetchData: function () {
+				  this.showPreloader = true;			  
+				  var xhr = new XMLHttpRequest()
+				  var self = this
+				  xhr.open('GET', sheetUrl )
+				  xhr.onload = function () {        
+					self.entries = JSON.parse(xhr.responseText)
+					self.entries = self.entries.feed.entry        
+				  }
+				  xhr.send()
+				  this.showPreloader = false;
+				},
+			//functions
+
+			  },  
+			  
+			})
+			
+			function save(s) {
+				
+			html2canvas(document.querySelector("#save"+s),  { windowWidth: 1024}).then(canvas => {
+				 var a = document.createElement('a');
+					// toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
+					a.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+					a.download = 'license'+s+'.png';
+					a.click();
+			});
+			}
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+        // Alternatively you could use:
+        // (new Image()).src = this;
+    });
+}
+
+// Usage:
+
+
+$('body').attr({
+    style: 'overflow:hidden;'
+});
+
+window.onload = function(){
+	$('.preload_page').fadeOut();
+	$('body').attr({
+		style: 'overflow:auto;'
+	});
+};
+		</script>
+<div class='bg'></div>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="0c29ffd990b74b1ad5ea9180-|49" defer=""></script></body>
+</html>
