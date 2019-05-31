@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Poof!</title>
+<meta charset="utf-8"> 
+
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+	
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class='container-fluid'>
+<button class='btn btn-primary' onclick="$('#imgAlpha').toggleClass('opaCity');" style='position:fixed;top:25;left:25;z-index:1000;'>Image Map Switch</button>
+<div class='row'>
+<div class='col-10 p-3 mx-auto zone'>
+    <img id="img" src="./img/bg1.jpg">
+    <img id="imgAlpha" src="./img/bg1-alpha.png">
+</div>
+</div>
+<div class='farFar row'>
+	<div class='col p-3'><p id="output">No usable</p><p id="output2"></p></div></div>
+<style>
+body {
+	background: url('./img/body-bg.jpg');
+    background-size: 175px;    
+}
+.zone {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+.zone img {
+    width: 100%;
+}
+img#imgAlpha {
+    position: absolute;
+    top: 0;
+    left: 0;
+	opacity:0;
+}
+.opaCity {
+	opacity:1 !important;
+	}
+
+.farFar {width:100%; min-height:100px;text-align:center;position:fixed;background:rgba(0,0,0,0.8);z-index:1000;bottom:0;}
+.farFar div > p {
+	background:rgba(255,255,255,0.7);
+}
+</style>
+<script>
+function componentToHex(c) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+function ColorName(color) {
+	fastName = 'NoName';
+	if (color == '#ff0083') {
+		fastName= 'Фонтан';
+	}
+	return fastName;
+}
+
+function GetVar(color) {
+	if (color == '#ff0083') {
+		ProviVar = [id = ['1']];
+	} else {
+		ProviVar = [id = ['0']];
+	}
+	return ProviVar;
+}
+$(function() {
+    
+    $('#imgAlpha').mousemove( function(e) {
+        
+        if(!this.canvas) {
+            this.canvas = $('<canvas />')[0];
+			this.canvas.crossOrigin = "Anonymous";
+            this.canvas.width = this.width;
+            this.canvas.height = this.height;
+            this.canvas.getContext('2d').drawImage(this, 0, 0, this.width, this.height);
+			fast = $(this).attr('id');
+			fast2 = this.width + ' -- ' + this.height;
+        }
+		if(this.canvas) {
+            this.canvas.width = this.width;
+            this.canvas.height = this.height;	
+            this.canvas.getContext('2d').drawImage(this, 0, 0, this.width, this.height);	
+		}
+        
+        var pixelData = this.canvas.getContext('2d').getImageData(event.offsetX, event.offsetY, 1, 1).data;
+			fastColor = rgbToHex(pixelData[0], pixelData[1], pixelData[2]);
+		
+		//$('#output').html('R: ' + pixelData[0] + '<br>G: ' + pixelData[1] + '<br>B: ' + pixelData[2] + '<br>A: ' + pixelData[3]);
+        if (pixelData[3] == '0') {
+			$('#output').html('No usable');
+			document.getElementsByTagName("html")[0].style.cursor = "auto";
+		}else {
+			ColorName(fastColor);
+			
+			$('#output').html('Usable '+ fast + '<br>Color: <strong style="color:' + fastColor +'">'+fastName+'</strong><br>' + fast2);
+			$('html').css("cursor: pointer");
+			document.getElementsByTagName("html")[0].style.cursor = "pointer";
+			
+			$('#imgAlpha').on('click', function() {
+				$('#output2').html('ID: '+GetVar(fastColor)+'<br>'+fastColor);
+			});
+		}
+        
+        
+    });    
+});
+</script>
+</body>
+</html>
