@@ -16,8 +16,8 @@ $.getJSON( './data3.json', function( data ) {
 					],
 					totalRows: 1,
 					currentPage: 1,
-					perPage: 15,
-					pageOptions: [5, 10, 15, 20, 25],
+					perPage: 20,
+					pageOptions: [20, 40, 50],
 					filter: null
 				}
 			},
